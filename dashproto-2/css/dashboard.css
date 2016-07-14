@@ -1,0 +1,30 @@
+﻿.date-span-btn {
+    margin-bottom: 5px;
+    margin-top:5px; 
+    margin-left: 5px;
+}
+
+.panel-default > .panel-heading {
+  background-color: black;
+}
+
+.panel-default > .panel-footer {
+  background-color: black;
+}
+
+.wrapper {    
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.form-signin {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 2px rgba(0,0,0,0.1);  
+ }
+
+.db-btn-margin {
+    margin-bottom: 5px;
+}

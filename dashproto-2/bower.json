@@ -1,0 +1,13 @@
+{
+	"name": "plain",
+	"private": true,
+  "dependencies": {
+    "angular": "1.5.7",
+    "angular-route": "1.5.7",
+    "angular-resource": "1.5.7",
+    "bootstrap": "3.3.6",
+    "Chart-js": "2.1.6",
+    "easy-pie-chart": "2.1.6",
+    "moment": "2.14.1"
+  }
+}

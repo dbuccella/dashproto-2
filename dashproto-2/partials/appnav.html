@@ -1,0 +1,25 @@
+﻿<div id="appNavbar">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="images/AgeroLogo.png" style="height:35px" />
+            </div>
+            <div class="navbar-brand">
+                <span>   Dashboard</span>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#login"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div id="appMenu" class="container-fluid">
+    <ul class="nav nav-tabs">
+        <li ng-class="{ 'active' : vName == 'status'}" ><a href="#status/30">Totals</a></li>
+        <li ng-class="{ 'active' : vName == 'reqType'}"><a href="#reqType/30">Request Type</a></li>
+        <li ng-class="{ 'active' : vName == 'reqType2'}"><a href="#reqType2/30">Request Type Alt</a></li>
+        <li ng-class="{ 'active' : vName == 'reqSource'}"  ><a href="#reqSource/30">Request Source</a></li>
+        <li ng-class="{ 'active' : vName == 'cancels'}"><a href="#cancels/30">Cancellations</a></li>
+        <li ng-class="{ 'active' : vName == 'ivr'}"><a href="#ivr/30">IVR</a></li>
+    </ul>
+</div>

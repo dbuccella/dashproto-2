@@ -1,0 +1,39 @@
+﻿<div class="container-fluid">
+    <div ng-include="'partials/appnav.html'"></div>
+    <div class="row">
+        <div style="margin-top: -10px;">
+            <ul class="pagination pagination-sm pull-right">
+                <li ng-class="{ 'active' : period == '30'}"><a href="#status/30">30 days</a></li>
+                <li ng-class="{ 'active' : period == '7'}"><a href="#status/7">7 days</a></li>
+                <li ng-class="{ 'active' : period == '1'}"><a href="#status/1">Today</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 panel panel-default">
+            <canvas id="totalToAutomatedChartId" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-3 panel panel-default">
+            <canvas id="totalToAutoSuccessChartId" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-3 panel panel-default">
+            <canvas id="totalToSuccessChartId" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-3 panel panel-default">
+            <canvas id="AutoToDoubleChanneledChartId" width="200" height="200"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pull-left"><h4>Live Data</h4></div>
+        <button type="button"  ng-click='liveChartToggle();' class="btn btn-xs pull-right" style="margin-top:5px">{{liveChartOn ? 'Pause ' : 'Resume '}}<span class="glyphicon glyphicon-pause"></span></button>
+    </div>
+    <div class="row panel panel-default">
+        <div class="col-md-12">
+            <canvas id="liveChartId" width="400" height="150"></canvas>
+        </div>
+    </div>
+<!--
+    <button ng-click='liveChartToggle();'>Test</button>
+    -->
+</div>

@@ -1,0 +1,19 @@
+﻿<div class="wrapper">
+    <form action="#status/30" method="get" name="Login_Form" class="form-signin">
+        <div>
+            <img src="images/AgeroLogo.png" style="height:35px" />
+        </div>
+        <h6 class="text-center">Please log in using your Agero username and password below</h6>
+        <br>
+
+        <input type="text" class="form-control db-btn-margin" name="Username" placeholder="Username" autofocus="" />
+        <input type="password" class="form-control db-btn-margin" name="Password" placeholder="Password" />
+
+        <button class="btn btn-danger btn-lg btn-block db-btn-margin" name="Submit" value="Login" type="Submit">Login</button>
+        <div id="LoginError" ng-hide="message == ''" class="alert alert-danger" style="margin-top: 10px;">
+            {{message}}
+        </div>
+
+        
+    </form>
+</div>

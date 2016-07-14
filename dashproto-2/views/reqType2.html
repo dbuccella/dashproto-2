@@ -1,0 +1,19 @@
+﻿<div class="container-fluid">
+    <div ng-include="'partials/appnav.html'"></div>
+    <div class="row">
+        <div class="col-md-12" style="margin-top: -10px;">
+            <ul class="pagination pagination-sm pull-right">
+                <li ng-class="{ 'active' : period == '30'}"><a href="#reqType2/30">30 days</a></li>
+                <li ng-class="{ 'active' : period == '7'}"><a href="#reqType2/7">7 days</a></li>
+                <li ng-class="{ 'active' : period == '1'}"><a href="#reqType2/1">Today</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 panel panel-default">
+            <canvas id="ReqTypeBarId" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+</div>

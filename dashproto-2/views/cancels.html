@@ -1,0 +1,89 @@
+﻿<div class="container-fluid">
+    <div ng-include="'partials/appnav.html'"></div>
+    <div class="row">
+        <div style="margin-top: -10px;">
+            <ul class="pagination pagination-sm pull-right">
+                <li ng-class="{ 'active' : period == '30'}"><a href="#cancels/30">30 days</a></li>
+                <li ng-class="{ 'active' : period == '7'}"><a href="#cancels/7">7 days</a></li>
+                <li ng-class="{ 'active' : period == '1'}"><a href="#cancels/1">Today</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas0-1Id" width="100" height="100"></canvas>
+        </div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <table class="table table-bordered">
+                    <caption style="background-color: #eee;"><strong>SP Cancel by Reason Type Totals</strong></caption>
+                    <thead>
+                        <tr>
+                            <th ng-repeat="l in labels">{{l}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                {{periodData.autoPJD}}
+                            </td>
+                            <td>
+                                {{periodData.autoTSVP}}
+                            </td>
+                            <td>
+                                {{periodData.autoOOA}}
+                            </td>
+                            <td>
+                                {{periodData.autoAJP}}
+                            </td>
+                            <td>
+                                {{periodData.autoNDA}}
+                            </td>
+                            <td>
+                                {{periodData.autoO}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                <table class="table table-bordered">
+                    <caption style="background-color: #eee;"><strong>SP Cancel Reason vs. Total - Total SP Cancelations: {{spCancelTotal}}</strong></caption>
+                    <thead>
+                        <tr>
+                            <th ng-repeat="l in labels">{{l}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                {{periodData.autoPJD/spCancelTotal*100 | number:0}}%
+                            </td>
+                            <td>
+                                {{periodData.autoTSVP/spCancelTotal*100 | number:0}}%
+                            </td>
+                            <td>
+                                {{periodData.autoOOA/spCancelTotal*100 | number:0}}%
+                            </td>
+                            <td>
+                                {{periodData.autoAJP/spCancelTotal*100 | number:0}}%
+                            </td>
+                            <td>
+                                {{periodData.autoNDA/spCancelTotal*100 | number:0}}%
+                            </td>
+                            <td>
+                                {{periodData.autoO/spCancelTotal*100 | number:0}}%
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 panel panel-default">
+            <canvas id="canvas1-1Id" width="400" height="100"></canvas>
+        </div>
+    </div>
+ 
+</div>

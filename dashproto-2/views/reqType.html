@@ -1,0 +1,46 @@
+﻿<div class="container-fluid">
+    <div ng-include="'partials/appnav.html'"></div>
+    <div class="row">
+        <div style="margin-top: -10px;">
+            <ul class="pagination pagination-sm pull-right">
+                <li ng-class="{ 'active' : period == '30'}"><a href="#reqType/30">30 days</a></li>
+                <li ng-class="{ 'active' : period == '7'}"><a href="#reqType/7">7 days</a></li>
+                <li ng-class="{ 'active' : period == '1'}"><a href="#reqType/1">Today</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas1-1Id" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas1-2Id" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas1-3Id" width="200" height="200"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas2-1Id" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas2-2Id" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas2-3Id" width="200" height="200"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas3-1Id" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas3-2Id" width="200" height="200"></canvas>
+        </div>
+        <div class="col-md-4 panel panel-default">
+            <canvas id="canvas3-3Id" width="200" height="200"></canvas>
+        </div>
+    </div>
+
+</div>
