@@ -43,7 +43,7 @@
             ['Total', 'Automated'],
             [myColors.typeTotal, myColors.automated],
             [myColors.typeTotalH, myColors.automatedH],
-             'IVR Automated/Total=');
+             'Web App Automated/Total=');
 
         ctx = document.getElementById("canvas1-3Id").getContext("2d");
         doughnutChartHelper(ctx,

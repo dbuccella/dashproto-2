@@ -1,13 +1,69 @@
 ﻿<div class="container-fluid">
     <div ng-include="'partials/appnav.html'"></div>
     <div class="row">
-        <div style="margin-top: -10px;">
+            <div class="form-group pull-right" style="margin-top: 5px;">
+                <label>Source Filter: </label>
+                <select class="form-control-static">
+                    <option>All Sources</option>
+                    <option>IVR</option>
+                    <option>Web App</option>
+                    <option>RSC</option>
+                    <option>3rd Party</option>
+                    <option>3rd Party Software</option>
+                    <option>PO Assist</option>
+                    <option>Agero Support</option>
+                </select>
+                <a href="#reqType/30" class="btn btn-default" ng-class="{ 'active' : period == '30'}">30 days</a>
+                <a href="#reqType/7" class="btn btn-default" ng-class="{ 'active' : period == '7'}">7 days</a>
+                <a href="#reqType/1" class="btn btn-default" ng-class="{ 'active' : period == '1'}">1 day</a>
+<!--
+                <button type="button" class="btn btn-default" ng-class="{ 'active' : period == '1'}">1</button>
+                <button type="button" class="btn btn-default">7</button>
+                <button type="button" class="btn btn-default active">30</button> -->
+                <!--
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                        Filter <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IVR</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Web App</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">RSC</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3rd Party</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3rd Party Software</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PO Assist</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Agero Support</a></li>
+
+                    </ul>
+                </div>
+                -->
+            </div>
+
+            <!--
             <ul class="pagination pagination-sm pull-right">
                 <li ng-class="{ 'active' : period == '30'}"><a href="#reqType/30">30 days</a></li>
                 <li ng-class="{ 'active' : period == '7'}"><a href="#reqType/7">7 days</a></li>
                 <li ng-class="{ 'active' : period == '1'}"><a href="#reqType/1">Today</a></li>
             </ul>
-        </div>
+            <div class="dropdown pull-right">
+                <button class="btn btn-sm dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                    Source Filter
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IVR</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Web App</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">RSC</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3rd Party</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3rd Party Software</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PO Assist</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Agero Support</a></li>
+                </ul>
+            </div> -->
     </div>
     <div class="row">
         <div class="col-md-4 panel panel-default">

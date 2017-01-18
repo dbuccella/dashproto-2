@@ -6,31 +6,31 @@
         function ($routeProvider) {
             $routeProvider.
                 when('/', {
-                    templateUrl: '/views/login.html',
+                    templateUrl: 'views/login.html',
                     controller: 'loginController'
                 }).
                 when('/login', {
-                    templateUrl: '/views/login.html',
+                    templateUrl: 'views/login.html',
                     controller: 'loginController'
                 }).
                 when('/status/:period', {
-                    templateUrl: '/views/status.html',
+                    templateUrl: 'views/status.html',
                     controller: 'statusController'
                 }).
                 when('/reqType/:period', {
-                    templateUrl: '/views/reqType.html',
+                    templateUrl: 'views/reqType.html',
                     controller: 'reqTypeController'
                 }).
                 when('/reqType2/:period', {
-                    templateUrl: '/views/reqType2.html',
+                    templateUrl: 'views/reqType2.html',
                     controller: 'reqTypeController2'
                 }).
                 when('/reqSource/:period', {
-                    templateUrl: '/views/reqSource.html',
+                    templateUrl: 'views/reqSource.html',
                     controller: 'reqSourceController'
                 }).
                 when('/cancels/:period', {
-                    templateUrl: '/views/cancels.html',
+                    templateUrl: 'views/cancels.html',
                     controller: 'cancelsController'
                 }).
                 otherwise({

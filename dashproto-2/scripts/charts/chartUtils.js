@@ -34,7 +34,7 @@ function varyData(delta, a)
 {
     var res = [];
     for (i = 0; i < a.length; i++)
-        res.push(Math.abs( a[i] - Math.random() * delta));
+        res.push(Math.abs(a[i] - Math.random() * delta));
     return res;
 }
 
